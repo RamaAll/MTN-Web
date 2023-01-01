@@ -1,0 +1,251 @@
+﻿
+.container1{
+	clear:both;
+	width:100%;
+	padding:0 2%;
+}
+.panel-container>div{
+	margin-right:0 !important;
+	margin-left:0 !important;
+	padding-right:0 !important;
+	padding-left:0 !important;
+}
+.panel-container iframe{
+	height:100% !important;
+	width:100% !important;
+}
+ul.rtabs
+{
+    text-align:left; /*set to left, center, or right to align the tabs as desired*/    
+    font-size:0;
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+        
+ul.rtabs li
+{
+    margin:0;
+    margin-right:4px; /*gap between tabs. Set it to -1px for no gap.*/
+    padding:0;
+    display:inline;
+}
+        
+ul.rtabs li a
+{
+    padding:15px 40px; /* It determines tab width */
+    display:inline-block;   
+    font-weight:600;
+    font-size:21px;
+    line-height:34px;/* height of tabs */
+    text-decoration: none;
+    color:#989898 !important;
+    background:#ebebeb;
+    outline:none;
+    border-bottom:none;
+    position:relative;
+}
+ .tabcontainer>ul.rtabs>li>a{
+	 padding:15px 40px; /* It determines tab width */
+    display:inline-block;   
+    font-weight:600;
+    font-size:21px;
+    line-height:34px;/* height of tabs */
+    text-decoration: none;
+    color:#b7b7b7 !important;
+	background:none;
+    outline:none;
+    border-bottom:none;
+    position:relative;
+ }
+ .mobileall>.tabcontainer>ul.rtabs>li>a{
+	 font-size:16px;
+	 padding:5px 15px;
+	 font-weight:600;
+ }
+ul.rtabs li a:link, ul.rtabs li a:visited
+{
+    color:#222;
+}
+        
+ul.rtabs li a:hover
+{
+    background-color:#fff;
+}
+.tabcontainer>ul.rtabs li a:hover{
+	color:#373737 !important;
+    font-weight:600;
+    background:none; /*color #2*/
+    z-index:3;
+	border-bottom:2px solid #6b6b6b !important;
+}
+/*selected tab style */
+ul.rtabs li.selected a
+{
+    color:#000;
+    border-color:#DDD; /*color #1*/
+    background:white; /*color #2*/
+    z-index:3;
+}
+.tabcontainer>ul.rtabs li.selected a
+{
+    color:#373737 !important;
+    font-weight:normal;
+    border-color:#DDD; /*color #1*/
+    background:none; /*color #2*/
+    z-index:3;
+	font-weight:600;
+	border-bottom:2px solid #6b6b6b !important;
+}   
+.tabcontainer>ul.rtabs{
+	padding:0 50px;
+}
+.mobileall>.tabcontainer>ul.rtabs{
+	padding:0;
+}
+
+        
+/*selected tab style on hover */
+ul.rtabs li.selected a:hover
+{
+    text-decoration:none;
+}
+.tabcontainer>.panel-container{
+	border-bottom:1px #ffbe00 solid;
+}
+#storefinder, #coveragemap{
+	clear:both;
+	height:360px;
+	padding:0;
+}
+/* container of content panels */
+div.panel-container
+{
+    border-top:2px solid #fff; /*color #1*/ 
+    border-radius:0 4px 4px 4px;
+    position:relative;    
+    padding:0px; margin:0px;
+    outline:none;
+    margin-top:-2px;
+}
+.tabcontainer>div.panel-container{
+	border-top:1px solid #ffbe00 !important; /*color #1*/ 
+	margin-top:0px;
+}
+
+
+/* content panel */       
+div.panel-container > div
+{
+    padding:30px 0;
+    /* The two settings below should not be changed. */
+    display: block;
+    margin:0px;
+}  
+.mobileall>.tabcontainer>div.panel-container > div{
+	background:#fff;
+	padding:20px !important;
+}
+.priceplan>.mobileall>.tabcontainer>div.panel-container > div{
+	padding:30px 10px !important;
+}
+#faq{
+	padding:0 !important;
+}
+div.panel-container div.inactive
+{
+    display: none;
+}
+
+/* loading image before ajax content is retrieved. Only applicable when Ajax is used.*/
+div.ajaxLoading {background:transparent url(loading.html) no-repeat center center; height:150px; width:20px; font-size:0;padding:0; margin:0 auto; }
+
+/* ====================== Responsive Design =========================== */
+/* ----------- 1280px ----------- */
+@media only screen 
+and (max-width:1280px) {
+	.wrapper{
+		width:100%;
+	}
+	ul.rtabs li a{
+		padding:15px 20px;
+	}
+}
+/* ----------- 1024px ----------- */
+@media only screen 
+and (max-width:1024px) {
+	ul.rtabs li a{
+		padding:15px 15px;
+	}
+	 .mobileall>.tabcontainer>ul.rtabs>li>a{
+	 font-size:15px;
+	 padding:5px 10px;
+	 font-weight:600;
+ }
+}
+/* ----------- 800px ----------- */
+@media only screen 
+and (max-width:800px) {
+	ul.rtabs li a{
+		font-size:15px;
+		padding:5px 15px;
+	}
+}
+/* ----------- 640px ----------- */
+@media only screen 
+and (max-width:640px) {
+	ul.rtabs li a{
+		font-size:12px;
+		padding:5px 10px;
+	}
+	.tabcontainer>ul.rtabs>li>a{
+		font-size:18px;
+		padding:15px 10px;
+	}
+}
+/* For mobiles */
+@media only screen and (max-width:560px){
+    .tabcontainer>ul.rtabs, ul.rtabs{
+        box-sizing:border-box;
+        border-left:1px solid #ccc;
+        border-top:1px solid #ccc;
+        min-width:260px;
+    }
+
+    ul.rtabs li, .tabcontainer>ul.rtabs li{
+        display:inline-block;
+        box-sizing:border-box;
+        margin-right:0;
+        width:50%; /* set it to 100% for one column, 33.33% for three-column */
+    }
+
+    ul.rtabs li:last-child:nth-child(odd), .tabcontainer>ul.rtabs li:last-child:nth-child(odd){
+        width:100%;
+    }
+
+    ul.rtabs li a, .tabcontainer>ul.rtabs li a {
+        border:none;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        display:block;
+        padding:0;
+        text-align:center;
+        border-radius:0;
+    }
+.tabcontainer>ul.rtabs li a{
+	border-bottom:none;
+	font-size:15px;
+}
+.mobileall>.tabcontainer>ul.rtabs li a{
+	border-bottom:1px solid #ccc;
+}
+    ul.rtabs li.selected a, .tabcontainer>ul.rtabs li.selected a {
+        background-color:#fff;
+    }
+
+    div.panel-container, .tabcontainer>div.panel-container {
+        border-radius:0;
+        min-width:260px;
+        box-sizing:border-box;
+    }
+}

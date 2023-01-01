@@ -1,0 +1,283 @@
+﻿@font-face {
+    font-family: 'Myriad-Pro';
+    src: url(https://www.mtnsyr.com/Content/fonts/Myriad-Pro.eot);
+    src: url(https://www.mtnsyr.com/Content/fonts/Myriad-Pro.eot?#iefix) format('embedded-opentype'), url(https://www.mtnsyr.com/Content/fonts/Myriad-Pro.woff2) format('woff2'), url(https://www.mtnsyr.com/Content/fonts/Myriad-Pro.woff) format('woff'), url(https://www.mtnsyr.com/Content/fonts/Myriad-Pro.ttf) format('truetype'), url(https://www.mtnsyr.com/Content/fonts/Myriad-Pro.svg#Myriad-Proregular) format('svg')
+}
+
+.main-menu, .account-menu{
+    margin: 0 15px;
+    float: left;
+
+}
+.main-menu ul, .account-menu ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+
+.main-menu ul li, .account-menu ul li{
+    float:left;
+    margin-right:33px;
+}
+
+.main-menu ul li a, .main-menu ul li span, .account-menu ul li a, .account-menu ul li span{
+    font-size: 16px;
+    color:#FFF;
+    font-weight: 600;
+    text-decoration:none;
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-menu ul li a:hover, .main-menu ul li span:hover, .account-menu ul li a:hover, .account-menu ul li span:hover{
+    color: #3c3c3c;
+}
+.lowhead.sticky .main-menu ul li a:hover,.lowhead.sticky .main-menu ul li span:hover,.lowhead.sticky .account-menu ul li a:hover,.lowhead.sticky .account-menu ul li span:hover{
+    color: #febe10;
+}
+.lowhead.sticky .main-menu ul li li a:hover,.lowhead.sticky .main-menu ul li li span:hover,.lowhead.sticky .account-menu ul li li a:hover,.lowhead.sticky .account-menu ul li li span:hover{
+    color:#545454;
+}
+.main-menu ul li li a:hover, .main-menu ul li li span:hover, .account-menu ul li li a:hover, .account-menu ul li li span:hover{
+    color: #fff;
+}
+
+.main-menu ul li a.active, .account-menu ul li a.active{
+    color:#febe10;
+}
+
+.main-menu ul li ul, .account-menu ul li ul{
+    display: none;
+    background: #6f6f6f;
+    position:absolute;
+    padding: 14px 14px 14px 0;
+}
+
+.main-menu ul li ul li, .account-menu ul li ul li{
+    float:left;
+    margin-right: 0px;
+    margin-right:15px;
+}
+
+.main-menu ul li ul li a, .main-menu ul li ul li span, .account-menu ul li ul li a, .account-menu ul li ul li span{
+    font-weight:normal;
+    font-size: 14px;
+    padding-top:0px;
+    padding-bottom:0px;
+    color: #ffffff;
+    font-weight:bold;
+    padding-bottom: 0;
+    border-bottom: 1px solid #febe10;
+    margin: 0;
+    padding: 6px 6px 6px 0;
+}
+
+.main-menu ul li ul li:last-child a{
+    margin: 0;
+}
+.main-menu ul li ul li:first-child a{
+}
+
+.main-menu ul li ul li:hover a{
+    background: #febe10;
+    border-bottom: 1px solid #fff;
+}
+.main-menu ul li ul li:hover li a{
+    background: #6F6F6F;
+    border: none;
+}
+.main-menu ul li ul li li:hover a{
+    background: #febe10;
+    color: #fff;
+}
+.addBorder {
+    border-bottom: 1px solid #CCC;
+}
+
+.main-menu ul li ul li ul, .account-menu ul li ul li ul{
+    background: none;
+    position: relative;
+    padding: 0;
+}
+
+.main-menu ul li ul li ul li, .account-menu ul li ul li ul li {
+    float: none;
+    display: block;
+    margin: 0;
+}
+
+.main-menu ul li ul li ul li a, .main-menu ul li ul li ul li span, .account-menu ul li ul li ul li a, .account-menu ul li ul li ul li span {
+    font-size: 13px;
+    font-weight: normal;
+    border-bottom: none;
+    padding: 6px 6px 6px 0;
+}
+
+#footer-menu{
+    display:none;
+    background:#2E2E2E;
+    padding: 0px;
+    padding-left: 15px;
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index: 30000000000;
+}
+
+#footer-menu a#logo img {
+    width: 45px;
+    margin-left: 10px;
+    float: left;
+}
+
+#footer-menu ul {
+    list-style: none;
+    margin: 0px;
+    float: left;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+#footer-menu ul li {
+    float: left;
+    margin-right: 5px;
+    padding: 12px;
+    padding-right: 0px;
+}
+
+#footer-menu ul li a {
+    color: white;
+    font-size: 12px;
+}
+
+#mobilemenu_icon {
+    float: left;
+    background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 27px;
+    margin-top: 10px;
+}
+
+.FooterMenuParentItem {
+    float: left;
+    width: 25% !important;
+    min-height: 210px;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .banner {
+        margin-top: 45px;
+    }
+
+    .tophead {
+        display: none;
+    }
+
+    .lowhead {
+        display: none;
+    }
+
+    #footer-menu {
+        display: block;
+        position: absolute;
+    }
+
+
+    .main-menu, .account-menu  {
+        display: none;
+    }
+
+    .global {
+        padding-bottom: 30px;
+    }
+
+
+    .searchme .cart {
+        display: none;
+    }
+
+    #footer-menu .cart {
+        float: right;
+        margin-right: 20px;
+        clear: none !important;
+        margin-top: 8px !important;
+    }
+
+    .searchme {
+        width: auto !important;
+        float: right !important;
+        position: absolute !important;
+        padding: 6px 2% 0;
+    }
+
+    .searchme .clearfix{
+        min-height: 6px !important;
+    }
+
+    .mtnmain {
+        width: auto !important;
+        float: left !important;
+        clear: none !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .clearfix {
+        min-height: 6px !important;
+    } 
+}
+
+@media (min-width:801px) and (max-width: 850px) {
+    .clearfix {
+        min-height: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-menu ul li a, .main-menu ul li span, .account-menu ul li a, .account-menu ul li span {
+        font-size: 14px;
+    }
+
+    .main-menu ul li ul li a, .main-menu ul li ul li span, .account-menu ul li ul li a, .account-menu ul li ul li span {
+        font-size: 12px;
+    }
+
+    .FooterMenuParentItem { 
+        width: 33.3333333% !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+  
+    .FooterMenuParentItem { 
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .main-menu ul li a, .main-menu ul li span, .account-menu ul li a, .account-menu ul li span {
+        font-size: 13px;
+    }
+
+    .main-menu ul li ul li a, .main-menu ul li ul li span, .account-menu ul li ul li a, .account-menu ul li ul li span {
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .searchem {
+        width: 170px;
+        margin-right: 10px;
+        margin-left: 65px;
+    }
+
+    .FooterMenuParentItem{
+        width:100% !important;
+        min-height: auto !important;
+    }
+}

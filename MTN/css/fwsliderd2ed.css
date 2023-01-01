@@ -1,0 +1,239 @@
+﻿/* ------------------------------- 3. Slider Styles ------------------------------- */
+#blinkRed a{
+	color:#FFCB05;
+	font-weight:bold;
+	}
+	
+#blinkRed {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+  color: #FFCB05;
+  font-weight: bold;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#fwslider {
+    position: relative;
+    width:100%;
+}
+
+#fwslider .slider_container {
+}
+
+#fwslider .slide {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+    width:100%;
+}
+.fakeslider>#fwslider .slide{
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	margin:0 !important;
+	padding:0 !important;
+	height:220px;
+	text-align:center;
+	margin:0 auto;
+	width:100%;
+}
+.xome{
+	clear:both;
+	width:100%;
+	text-align:center;
+}
+.fakeme{
+	clear:both;
+	padding:7px 0 0 0;
+}
+.fakeme h2{
+	color:#6b6b6b;
+	font-weight:600;
+	font-size:18px;
+}
+
+#fwslider .slide img {
+    width:100%;
+	display:inline;
+}
+.fakeslider>#fwslider .slide img{
+	display:inline;
+	width: auto;
+	margin:0 !important;
+	padding:0 !important;
+}
+#fwslider .slidePrev {
+    background:#000;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    left:-50px;
+    opacity:0.5;
+    z-index: 1;
+}
+
+#fwslider .slidePrev span {
+    background-image: url(../images/left_arrow.png);
+    width:50px;
+    height:50px;
+    float:left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.fakeslider>#fwslider .slidePrev span {
+    background-image: url(../images/fakeleft.png);
+}
+#fwslider .slideNext {
+    background:#000;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    right:-50px;
+    opacity:0.5;
+    z-index: 1;
+}
+
+#fwslider .slideNext span {
+    background-image: url(../images/right_arrow.png);
+    width:50px;
+    height:50px;
+    float:left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.fakeslider>#fwslider .slideNext span {
+	background-image: url(../images/fakeright.png);
+}
+#fwslider img{
+	display:block;
+}
+.fakeslider>#fwslider .slidePrev, .fakeslider>#fwslider .slideNext {
+	background:none !important;
+}
+#fwslider .timers {
+    height:4px;
+    position: absolute;
+    bottom:60px;
+    right:50px;
+    z-index: 3;
+}
+.fakeslider>#fwslider .timers{
+	display:none;
+}
+
+#fwslider .timer {
+    height:4px;
+    width:40px;
+    background-color: #000;
+    float:left;
+    margin-right: 10px;
+}
+
+#fwslider .progress {
+    height:4px;
+    width:0%;
+    background-color: #FC3;
+    float:left;
+}
+
+#fwslider .slide_content {
+    top:0;
+    left:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+#fwslider .slide_content_wrap { /* Slider Text Content Container Style */
+    width:95%;
+    margin:0 5% 0px 5%;
+	bottom:20px;
+	position: absolute;
+}
+.slide_content_wrap h2{
+	color:#ffbe00;
+	font-size:100px;
+	font-weight:600;
+	text-shadow:0px 1px 0px #000;
+	line-height:1;
+}
+.slide_content_wrap h3{
+	color:#fff;
+	font-size:40px;
+	font-weight:600;
+	text-shadow:0px 1px 0px #000;
+	line-height:1;
+}
+.moreme{
+	clear:both;
+	margin-top:30px;
+}
+.slide_content_wrap a{
+	background:#FFBF00;
+	border:1px #FFBF00 solid;
+	text-decoration:none;
+	padding:13px 50px;
+	color:#373737;
+	font-size:21px;
+	font-weight:600;
+}
+.slide_content_wrap a:hover{
+	border:1px #fff solid;
+}
+
+/* ------------------------------- 4. Media Query Max Width 1300, Min Width 720 ------------------------------- */
+
+
+
+@media only screen and (min-width:720px) and (max-width: 1300px) {
+
+    #fwslider .slide_content_wrap { margin-left:50px; margin-top:15%
+
+
+}
+
+/* ------------------------------- 5. Media Query Max Width 1024 ------------------------------- */
+@media screen and (max-width:1024px) {
+	#fwslider .slide_content_wrap { /* Slider Text Content Container Style */
+    margin:50px 5% 0px 10%;
+	width:90%;
+}
+
+}
+/* ------------------------------- 5. Media Query Max Width 1280 ------------------------------- */
+@media screen and (max-width:1280px) {
+	#fwslider .slide_content_wrap { /* Slider Text Content Container Style */
+    margin:50px 5% 0px 10%;
+	width:90%;
+}
+
+}
+/* ----------- 800px ----------- */
+@media only screen 
+and (max-width:800px) {
+	.slide_content_wrap h2{
+	font-size:50px ;
+}
+.slide_content_wrap h3{
+	font-size:30px ;
+}
+.slide_content_wrap a{
+	padding:7px 30px;
+	font-size:15px ;
+}
+}

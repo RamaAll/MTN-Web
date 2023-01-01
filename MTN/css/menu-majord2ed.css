@@ -1,0 +1,155 @@
+﻿/* Add */
+.jetmenu>li>ul>li{
+	display:inline;
+	float:left;
+	margin-right:12px;
+}
+.jetmenu>li>a, .jetmenu>li{
+	border:none !important;
+}
+.jetmenu>li>ul>li>a{
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	font-size:15px !important;
+	color:#ffffff !important;
+	border-bottom:1px #666666 solid;
+	display:block;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+.jetmenu{margin: 0px 0 20px 0;z-index: 99;}
+.jetmenu{width:100%;padding:0;margin:0;position:relative;float:left;list-style:none;/*background:#000;*/
+	-moz-border-top-right-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -khtml-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+	
+	-moz-border-top-left-radius:5px;
+    -webkit-border-top-left-radius:5px;
+    -khtml-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+}
+
+.jetmenu li.firstchild{
+	-moz-border-top-left-radius:5px;
+    -webkit-border-top-left-radius:5px;
+    -khtml-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+	/* Prevent background color leak outs */
+	  -webkit-background-clip: padding-box; 
+	  -moz-background-clip:    padding; 
+	  background-clip:         padding-box;
+}
+.jetmenu li.lastchild{
+	-moz-border-top-right-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -khtml-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+	background:#000;
+	/* Prevent background color leak outs */
+	  -webkit-background-clip: padding-box; 
+	  -moz-background-clip:    padding; 
+	  background-clip:         padding-box;
+}
+.lastchild a{
+	border-right:none !important;
+}
+.jetmenu li{display:inline-block;float:left}
+.jetmenu a{-o-transition:all .3s linear;-webkit-transition:all .3s linear;-moz-transition:all .3s linear;transition:all .3s linear;outline:0;z-index:10}
+.jetmenu>li>a{padding:15px 23px; margin:0; font-size:22px;color:#fff;text-decoration:none;display:block;}
+.jetmenu>li.active>a,.jetmenu>li:hover>a{color:#ffcb05;}
+.jetmenu ul.dropdown,.jetmenu ul.dropdown li ul.dropdown{list-style:none;margin:0;padding:0;display:none;position:absolute;z-index:99;min-width:134px;background:#333}
+.jetmenu ul.dropdown{top:60px;}
+.jetmenu ul.dropdown li ul.dropdown{left:100%;top:inherit}
+.jetmenu ul.dropdown li{clear:both;width:100%;font-size:12px}
+.jetmenu ul.dropdown li a{width:100%; padding:12px 24px;display:inline-block;float:left;clear:both;text-decoration:none;color:#999;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+.jetmenu ul.dropdown li:hover>a{background:#e0e0e0;color:#555}
+.jetmenu ul.dropdown li ul.dropdown.left{left:auto;right:100%}
+.jetmenu .indicator{position:relative;left:5px;top:0;font-size:14px;float:right; display:none;}
+.jetmenu ul li .indicator{font-size:12px;top:10px;left:10px}
+.jetmenu>li>ul{position:absolute;display:none;background:#000; border-top:1px #545454 solid; width:100%;top:36px;font-size:12px;color:#999;
+z-index:99999999999999999999999999999999999999999999999999999999999999; top:60px !important;
+padding:20px 30px;border-top:1px solid #000;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.jetmenu>li>ul ul{margin:0 0 20px;float:left;padding:0;display:block;position:relative; }
+.jetmenu>li>ul ul li{width:100%;padding:4px 0}
+
+.jetmenu>li>ul a{color:#999;text-decoration:none;font-size:12px;-webkit-transition:color .3s linear;-moz-transition:color .3s linear;-o-transition:color .3s linear;transition:color .3s linear}
+.jetmenu>li>ul a:hover{color:#ffb504;}
+.jetmenu>li>ul{width:100% !important;left:0}
+
+
+
+.jetmenu>li>ul>li{width:23%;/*margin-top:15px*/}
+.jetmenu>li>ul>li:first-child{margin-top:0}
+.jetmenu>li>ul>li:after,.megamenu>li:before{display:table;content:"";line-height:0}
+.jetmenu>li>ul>li:after{clear:both}
+
+
+.jetmenu>li>a{
+	border-right:1px #545454 solid;
+}
+
+.jetmenu>li>a>i{line-height:23px!important;margin-right:6px;font-size:18px;float:left}
+.jetmenu>li.showhide{display:none;width:100%;height:60px;cursor:pointer;color:#999;background:#333}
+.jetmenu>li.showhide span.title{margin:20px 0 0 80px;font-family:'Open Sans',sans-serif;float:left}
+.jetmenu>li.showhide span.icon{margin:17px 20px;float:right}
+.jetmenu>li.showhide .icon em{margin-bottom:3px;display:block;width:20px;height:2px;background:#999}
+
+/* ----------- 800px ----------- */
+@media only screen 
+and (max-width:800px) {
+	.jetmenu>li>ul{
+		left:0 !important;
+	}
+}
+
+@media (max-width:768px){
+	.jetmenu{
+		z-index:999999999;
+		background: url(../images/lowhead.png)
+	}
+	.jetmenu>li{display:block;width:100%; border-bottom:1px #000000 solid !important; repeat z; box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+	.jetmenu>li>a{padding:15px 25px; border-bottom:1px #545454 solid;}
+	.jetmenu a{width:100%;/*background:#333;*/box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
+	.jetmenu ul.dropdown,.jetmenu ul.dropdown li ul.dropdown{width:100%!important;left:0;position:static!important;border:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; z-index:99999;}
+	.jetmenu ul.dropdown li{background:#fff!important;border:none}
+	.jetmenu ul.dropdown>li>a{padding-left:40px!important;}
+	.jetmenu>li>.megamenu{width:100%!important;position:static;border-top:none}
+	.jetmenu>li>.megamenu>li /*[class*=col]*/{float:none;display:block;width:100%!important;margin-left:0;margin-top:15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+	.jetmenu>li>.megamenu>li,.jetmenu>li>.megamenu>li:first-child/* [class*=col]*/:first-child{margin-top:0}
+	.jetmenu>li>ul.dropdown>li>a{padding-left:40px!important}
+	.jetmenu>li>ul.dropdown>li>ul.dropdown>li>a{padding-left:60px!important}
+	.jetmenu>li>ul.dropdown>li>ul.dropdown>li>ul.dropdown>li>a{padding-left:80px!important}
+	
+	.jetmenu li.firstchild{
+	-moz-border-top-left-radius:0px;
+    -webkit-border-top-left-radius:0px;
+    -khtml-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.jetmenu li.lastchild{
+	-moz-border-top-right-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -khtml-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+	background:#000;
+}
+}
+@media (min-width:800px) and (max-width:900px){
+	.jetmenu>li>ul{width:100%!important;left:0!important}
+}
+	.jetmenu li > .megamenu ul li.title{margin: 0 0 8px;padding: 0 0 5px;font-size: 14px;border-bottom: solid 1px #666;}
+	
+		@media (max-width: 480px){
+			.content{margin: 0;}
+	}
+			
+	html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } 
+	html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ 
+	html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension_/pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.html") 14 16, text; }
+	 /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension_/pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.html");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; }
+	 /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; }
+	 
+	 /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension_/pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.html"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ 
+
+@media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension_/pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow%402x.html"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension_/pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite%402x.html"); background-size: 68px 34px; } } 
